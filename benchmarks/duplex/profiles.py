@@ -12,9 +12,9 @@ ProfileName = Literal[
 ]
 DEFAULT_PROFILE: ProfileName = "nemotron-voicechat-pr2188"
 # note (luojiaxuan): "native" is the full-duplex session protocol with sglang.*
-# receipts; "legacy" is the turn-based conversation protocol of LegacyRealtimeFacade;
-# "turn_based" is the session protocol with sglang.* receipts whose server takes
-# turns by server VAD and answers each one.
+# receipts; "legacy" is the turn-based conversation protocol, with `modalities` and a
+# top-level `turn_detection`; "turn_based" is the session protocol with sglang.*
+# receipts whose server takes turns by server VAD and answers each one.
 Protocol = Literal["native", "legacy", "turn_based"]
 
 
